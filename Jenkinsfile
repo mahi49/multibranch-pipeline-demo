@@ -25,14 +25,6 @@ pipeline {
                 checkout changelog: false, poll: false, scm: [$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'mahender', url: 'https://github.com/mahi49/multibranch-pipeline-demo.git']]]
             }
         }  
-        
-        stage(' testing ') {
-            steps {
-                sh """
-                echo "test mycode"
-                """
-            }
-        }
 
          stage(' Unit Testing') {
             steps {
