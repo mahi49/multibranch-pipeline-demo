@@ -37,6 +37,13 @@ pipeline {
                 """
             }
         }
+        tage(' Unit Testing') {
+            steps {
+                sh """
+                echo "Running Unit Tests"
+                """
+            }
+        }
 
         stage('Code Analysis') {
             steps {
