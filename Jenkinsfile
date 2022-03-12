@@ -33,6 +33,11 @@ pipeline {
                 """
             }
         }
+        stage(' validate') {
+            steps {
+                sh """
+                echo "validate my code"
+                """
 
         stage('Code Analysis') {
             steps {
