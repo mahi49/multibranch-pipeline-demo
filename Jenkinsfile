@@ -10,6 +10,7 @@ pipeline {
     }
 
     stages {
+        
         stage('Cleanup Workspace') {
             steps {
                 cleanWs()
@@ -32,13 +33,16 @@ pipeline {
                 """
             }
         }
+         
         stage(' validate') {
             steps {
                 sh """
                 echo "validate my code"
-                """
-
-        stage('Code Analysis') {
+             """  
+            }
+        }
+         
+         stage('Code Analysis') {
             steps {
                 sh """
                 echo "Running Code Analysis"
