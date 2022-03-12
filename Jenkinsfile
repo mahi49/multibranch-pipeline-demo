@@ -34,7 +34,7 @@ pipeline {
             }
         }
          
-        stage(' validate') {
+        stage('validate') {
             steps {
                 sh """
                 echo "validate  my code"
