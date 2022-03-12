@@ -33,10 +33,10 @@ pipeline {
                 """
             }
         }
-        tage(' Unit Testing 2') {
+        tage(' package') {
             steps {
                 sh """
-                echo "Running Unit Tests"
+                echo "create war file"
                 """
             }
         }
