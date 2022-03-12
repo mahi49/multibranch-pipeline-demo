@@ -57,6 +57,14 @@ pipeline {
                 """
             }
         }
+        
+        stage('test') {
+            steps {
+                sh """
+                echo "test file"
+                """
+            }
+        }
        
         stage('Code Analysis') {
             steps {
