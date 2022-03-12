@@ -34,10 +34,10 @@ pipeline {
             }
         }
          
-        stage(' build') {
+        stage(' validate') {
             steps {
                 sh """
-                echo "build my code"
+                echo "validate  my code"
              """  
             }
         }
