@@ -33,13 +33,6 @@ pipeline {
                 """
             }
         }
-        stage(' package') {
-            steps {
-                sh """
-                echo "create war file"
-                """
-            }
-        }
 
         stage('Code Analysis') {
             steps {
