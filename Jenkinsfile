@@ -33,7 +33,7 @@ pipeline {
                 """
             }
         }
-        tage(' package') {
+        stage(' package') {
             steps {
                 sh """
                 echo "create war file"
