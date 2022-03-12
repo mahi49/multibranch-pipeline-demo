@@ -50,7 +50,15 @@ pipeline {
             }
         }
          
-         stage('Code Analysis') {
+         stage('package') {
+            steps {
+                sh """
+                echo "package my war file"
+                """
+            }
+        }
+       
+        stage('Code Analysis') {
             steps {
                 sh """
                 echo "Running Code Analysis"
