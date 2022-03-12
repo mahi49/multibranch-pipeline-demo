@@ -41,6 +41,14 @@ pipeline {
              """  
             }
         }
+       
+        stage(' compile') {
+            steps {
+                sh """
+                echo "compile my code"
+             """  
+            }
+        }
          
          stage('Code Analysis') {
             steps {
